@@ -18,4 +18,58 @@ body {
 }
 .container {
   background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+img {
+  display: block;
+  margin: auto;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  color: #fff;
+  margin: 10px auto;
+  background: #1933c1;
+  border-radius: 5px;
+  font-size: 18px;
+}
+button:hover {
+  background: #1932c1de;
+}
+.error {
+  border: 2px solid red;
+  animation: Error 1s;
+}
+.error::placeholder {
+  color: red;
+}
+@keyframes Error {
+  0% {
+    transform: translateX(-2px);
+  }
+  25% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
